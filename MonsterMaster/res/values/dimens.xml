@@ -1,0 +1,5 @@
+<resources>
+
+    <dimen name="splashscreen_logo_width">200sp</dimen>
+
+</resources>
