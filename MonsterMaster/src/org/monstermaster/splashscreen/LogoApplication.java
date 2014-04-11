@@ -18,7 +18,7 @@ public class LogoApplication extends SplashscreanActivity {
     }
 
     @Override
-    void startActivity() {
+    protected void startActivity() {
         Intent intent = new Intent(LogoApplication.this, MainActivity.class);
         startActivity(intent);
     }

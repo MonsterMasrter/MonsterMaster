@@ -12,21 +12,21 @@ import android.widget.ImageView;
  */
 public abstract class SplashscreanActivity extends Activity {
 
-    private static final int _TIME = 2 * 1000;
+    private static final int TIME = 2 * 1000;
 
-    private ImageView _logo;
+    private ImageView logo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splashscreen);
 
-        _logo = (ImageView) findViewById(R.id.splashscreen_logo);
+        logo = (ImageView) findViewById(R.id.splashscreen_logo);
         startNextActivityAfterTime();
     }
 
     protected void setLogo(int drawable) {
-        _logo.setImageDrawable(getResources().getDrawable(drawable));
+        logo.setImageDrawable(getResources().getDrawable(drawable));
     }
 
     private void startNextActivityAfterTime() {
@@ -43,10 +43,10 @@ public abstract class SplashscreanActivity extends Activity {
                 overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }
 
-        }, _TIME);
+        }, TIME);
     }
 
-    abstract void startActivity();
+    protected abstract void startActivity();
 
     @Override
     public void onBackPressed() {
