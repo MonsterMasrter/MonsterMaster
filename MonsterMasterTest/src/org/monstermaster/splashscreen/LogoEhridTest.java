@@ -1,13 +1,12 @@
 package org.monstermaster.splashscreen;
 
-import android.content.Intent;
-import android.test.ActivityUnitTestCase;
+import android.test.ActivityInstrumentationTestCase2;
 import android.test.suitebuilder.annotation.MediumTest;
 
 /**
  * @author horodysk
  */
-public class LogoEhridTest extends ActivityUnitTestCase<LogoEhrid> {
+public class LogoEhridTest extends ActivityInstrumentationTestCase2<LogoEhrid> {
 
     /***/
     public LogoEhridTest() {
@@ -17,8 +16,6 @@ public class LogoEhridTest extends ActivityUnitTestCase<LogoEhrid> {
     @Override
     protected void setUp() throws Exception {
         super.setUp();
-        Intent intent = new Intent(getInstrumentation().getTargetContext(), LogoEhrid.class);
-        startActivity(intent, null, null);
     }
 
     /***/

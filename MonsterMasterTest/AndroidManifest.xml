@@ -3,9 +3,13 @@
     package="org.monstermaster.test"
     android:versionCode="1"
     android:versionName="1.0" >
+    
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="19" />
 
     <instrumentation
-        android:name="com.zutubi.android.junitreport.JUnitReportTestRunner"
+        android:name="android.test.InstrumentationTestRunner"
         android:targetPackage="org.monstermaster" />
 
     <application
