@@ -6,6 +6,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 
 /**
  * @author horodysk
@@ -13,6 +14,8 @@ import android.widget.ImageView;
 public abstract class SplashscreanActivity extends Activity {
 
     private static final int TIME = 2 * 1000;
+
+    private RelativeLayout layout;
 
     private ImageView logo;
 
@@ -22,11 +25,17 @@ public abstract class SplashscreanActivity extends Activity {
         setContentView(R.layout.activity_splashscreen);
 
         logo = (ImageView) findViewById(R.id.splashscreen_logo);
+        layout = (RelativeLayout) logo.getParent();
+
         startNextActivityAfterTime();
     }
 
     protected void setLogo(int drawable) {
         logo.setImageDrawable(getResources().getDrawable(drawable));
+    }
+
+    protected void setBackground(int drawable) {
+        layout.setBackgroundDrawable(getResources().getDrawable(drawable));
     }
 
     private void startNextActivityAfterTime() {

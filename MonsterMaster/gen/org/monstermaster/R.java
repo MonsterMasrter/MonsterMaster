@@ -19,12 +19,13 @@ public final class R {
         public static final int background_white=0x7f050001;
     }
     public static final class dimen {
-        public static final int splashscreen_logo_width=0x7f060000;
+        public static final int splashscreen_logo_padding=0x7f060000;
     }
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
         public static final int logo_ehrid=0x7f020001;
         public static final int logo_monstermaster=0x7f020002;
+        public static final int sky=0x7f020003;
     }
     public static final class id {
         public static final int splashscreen_logo=0x7f090000;

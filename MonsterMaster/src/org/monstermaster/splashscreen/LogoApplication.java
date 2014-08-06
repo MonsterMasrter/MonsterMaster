@@ -15,6 +15,7 @@ public class LogoApplication extends SplashscreanActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setLogo(R.drawable.logo_monstermaster);
+        setBackground(R.drawable.sky);
     }
 
     @Override

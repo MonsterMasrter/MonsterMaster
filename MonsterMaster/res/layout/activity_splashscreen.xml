@@ -6,8 +6,9 @@
 
     <ImageView
         android:id="@+id/splashscreen_logo"
-        android:layout_width="@dimen/splashscreen_logo_width"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:padding="@dimen/splashscreen_logo_padding"
         android:layout_centerInParent="true" />
 
 </RelativeLayout>
