@@ -9,7 +9,7 @@
         android:targetSdkVersion="19" />
 
     <instrumentation
-        android:name="android.test.InstrumentationTestRunner"
+        android:name="com.zutubi.android.junitreport.JUnitReportTestRunner"
         android:targetPackage="org.monstermaster" />
 
     <application
