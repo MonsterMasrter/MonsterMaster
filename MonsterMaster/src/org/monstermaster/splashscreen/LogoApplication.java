@@ -11,17 +11,17 @@ import android.os.Bundle;
  */
 public class LogoApplication extends SplashscreanActivity {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setLogo(R.drawable.logo_monstermaster);
-        setBackground(R.drawable.sky);
-    }
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setLogo(R.drawable.logo_monstermaster);
+		setBackground(R.drawable.sky);
+	}
 
-    @Override
-    protected void startActivity() {
-        Intent intent = new Intent(LogoApplication.this, MainActivity.class);
-        startActivity(intent);
-    }
+	@Override
+	protected void startActivity() {
+		Intent intent = new Intent(LogoApplication.this, MainActivity.class);
+		startActivity(intent);
+	}
 
 }
